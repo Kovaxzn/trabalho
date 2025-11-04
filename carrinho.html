@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Daniel Lanches</title>
+    <link rel="shortcut icon" href="danielico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="carrinho.html">🛒 Carrinho</a>
+        </nav>
+    </header>
+
+    <section id="carrinho" class="container">
+        <h2>Seu Carrinho de Compras</h2>
+        
+        <div id="itens-carrinho">
+            <!-- Itens do carrinho serão inseridos aqui pelo JavaScript -->
+            <p>Seu carrinho está vazio.</p>
+        </div>
+
+        <div id="resumo-carrinho">
+            <h3>Resumo do Pedido</h3>
+            <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+            <button id="finalizar-compra" disabled>Finalizar Compra</button>
+        </div>
+    </section>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Daniel</title>
+    <title>Cardápio | Daniel Lanches</title>
     <link rel="shortcut icon" href="danielico.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -20,6 +20,14 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="carrinho.html">🛒 Carrinho</a>
+        </nav>
+    </header>
     <section id="cardapio" class="container">
     <h2>Nosso Cardápio</h2>
     <div class="grid">
@@ -27,30 +35,35 @@
         <img src="xburguer.jpg" alt="X-Burger">
         <h3>X-Burger</h3>
         <p>Pão macio, hambúrguer artesanal, queijo e salada fresquinha.</p>
-        <span>R$ 23,00</span>
+        <span class="preco" data-preco="23.00">R$ 23,00</span>
+        <button class="adicionar-carrinho" data-id="1" data-nome="X-Burger" data-preco="23.00">Adicionar ao Carrinho</button>
       </div>
       <div class="card">
         <img src="xbacon.jpg" alt="X-Bacon">
         <h3>X-Bacon</h3>
         <p>Suculento hambúrguer com bacon crocante e molho especial.</p>
-        <span>R$ 25,00</span>
+        <span class="preco" data-preco="25.00">R$ 25,00</span>
+        <button class="adicionar-carrinho" data-id="2" data-nome="X-Bacon" data-preco="25.00">Adicionar ao Carrinho</button>
       </div>
       <div class="card">
         <img src="xfRAGON.jpg" alt="X-Frango">
         <h3>X-Frango</h3>
         <p>Peito de frango grelhado, queijo, alface e tomate.</p>
-        <span>R$ 32,00</span>
+        <span class="preco" data-preco="32.00">R$ 32,00</span>
+        <button class="adicionar-carrinho" data-id="3" data-nome="X-Frango" data-preco="32.00">Adicionar ao Carrinho</button>
       </div>
       <div class="card">
         <img src="danielll.jpg" alt="Maior lanche de todos">
         <h3>Big Daniel</h3>
         <p>Vem comer o Danielzão, um grande desafio, Se você terminar o lanche em 1 hora, <strong>leva 1000R$ para casa!!</strong></p>
-        <span>R$ 999,99 CASO NÃO CONSEGUIR O DESAFIO</span>
+        <span class="preco" data-preco="999.99">R$ 999,99</span>
+        <button class="adicionar-carrinho" data-id="4" data-nome="Big Daniel" data-preco="999.99">Adicionar ao Carrinho</button>
       </div>
     </div>
   </section>
+    <script src="js/carrinho.js"></script>
 </body>
-<footer>
-    <p class="voltar"><a href="home.html">Voltar</a></p>
-</footer>
+
+    
+
 </html>
