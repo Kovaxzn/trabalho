@@ -209,7 +209,11 @@
         transform: -50%;
         
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 147b0beb0586dd74abb26a683987aaf5527a1a9c
 /* Estilos para o botão Adicionar ao Carrinho */
 .card button.adicionar-carrinho {
     background-color: #ff4500; /* Cor laranja */
@@ -353,7 +357,11 @@ body {
 }
 
 /* Estilo para o link do carrinho no header */
+<<<<<<< HEAD
 header nav a[href="carrinho.html"] {
+=======
+header nav a[href=\"carrinho.html\"] {
+>>>>>>> 147b0beb0586dd74abb26a683987aaf5527a1a9c
     font-weight: bold;
     color: #ff4500;
 }
@@ -362,3 +370,54 @@ header nav a[href="carrinho.html"] {
 #cardapio {
     padding-top: 30px; /* Ajuste para o conteúdo do cardápio */
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+/* Estilos para o formulário de dados do cliente */
+#dados-cliente {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#dados-cliente h3 {
+    color: #d62828;
+    margin-bottom: 15px;
+}
+
+#form-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-pedido input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#enviar-pedido {
+    background-color: #d62828; /* Vermelho */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enviar-pedido:hover {
+    background-color: #a31616;
+}
+=======
+>>>>>>> a9b52546c135942d113dd151ae682a1219a7c9a7
+>>>>>>> a42b2b0d916fc354d2b59dd4d9a0d162dd98080a
+>>>>>>> 147b0beb0586dd74abb26a683987aaf5527a1a9c
