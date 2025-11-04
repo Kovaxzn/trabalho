@@ -209,3 +209,156 @@
         transform: -50%;
         
     }
+
+/* Estilos para o botão Adicionar ao Carrinho */
+.card button.adicionar-carrinho {
+    background-color: #ff4500; /* Cor laranja */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card button.adicionar-carrinho:hover {
+    background-color: #e03e00; /* Laranja mais escuro no hover */
+}
+
+/* Estilos para a página do Carrinho */
+#carrinho {
+    padding-top: 100px; /* Espaço para o header fixo */
+    min-height: 80vh;
+}
+
+#itens-carrinho {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.lista-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.lista-carrinho li:last-child {
+    border-bottom: none;
+}
+
+.item-nome {
+    flex-basis: 40%;
+    font-weight: bold;
+}
+
+.item-preco, .item-subtotal {
+    flex-basis: 15%;
+    text-align: right;
+}
+
+.item-quantidade {
+    flex-basis: 10%;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.remover-item {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.remover-item:hover {
+    background-color: #c82333;
+}
+
+#resumo-carrinho {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 8px;
+    background-color: #fff8f2;
+    text-align: right;
+}
+
+#resumo-carrinho h3 {
+    margin-top: 0;
+    color: #ff4500;
+}
+
+#total-carrinho {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+#finalizar-compra {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-compra:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#finalizar-compra:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Ajuste para o header fixo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Garante que o header cubra o conteúdo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para o body para evitar que o conteúdo fique atrás do header */
+body {
+    padding-top: 70px; /* Ajuste este valor se o header for maior */
+}
+
+/* Estilo para o link do carrinho no header */
+header nav a[href="carrinho.html"] {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Ajuste para o cardapio.html que agora tem header */
+#cardapio {
+    padding-top: 30px; /* Ajuste para o conteúdo do cardápio */
+}
