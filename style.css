@@ -202,3 +202,10 @@
       padding: 15px;
       margin-top: 20px;
     }
+    .ico{
+        width: 125px;
+        margin:0px;
+        display: block;
+        transform: -50%;
+        
+    }
