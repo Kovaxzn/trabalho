@@ -362,6 +362,7 @@ header nav a[href=\"carrinho.html\"] {
 #cardapio {
     padding-top: 30px; /* Ajuste para o conteúdo do cardápio */
 }
+<<<<<<< HEAD
 
 /* Estilos para o formulário de dados do cliente */
 #dados-cliente {
@@ -404,3 +405,5 @@ header nav a[href=\"carrinho.html\"] {
 #enviar-pedido:hover {
     background-color: #a31616;
 }
+=======
+>>>>>>> a9b52546c135942d113dd151ae682a1219a7c9a7

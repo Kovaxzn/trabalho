@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartDisplay();
     }
 
+<<<<<<< HEAD
     // Lógica para o formulário de pedido
     const formPedido = document.getElementById('form-pedido');
     if (formPedido) {
@@ -207,6 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 // alert('Pedido finalizado! O total é: ' + document.getElementById('total-carrinho').textContent + '. Em breve entraremos em contato para confirmar o pedido.');
                 // localStorage.removeItem(CART_STORAGE_KEY); // Limpa o carrinho
                 // updateCartDisplay(); // Atualiza a exibição
+=======
+    // Lógica para o botão Finalizar Compra (simulação)
+    const finalizarCompraBtn = document.getElementById('finalizar-compra');
+    if (finalizarCompraBtn) {
+        finalizarCompraBtn.addEventListener('click', () => {
+            const cart = getCart();
+            if (cart.length > 0) {
+                alert('Pedido finalizado! O total é: ' + document.getElementById('total-carrinho').textContent + '. Em breve entraremos em contato para confirmar o pedido.');
+                localStorage.removeItem(CART_STORAGE_KEY); // Limpa o carrinho
+                updateCartDisplay(); // Atualiza a exibição
+>>>>>>> a9b52546c135942d113dd151ae682a1219a7c9a7
             } else {
                 alert('Seu carrinho está vazio.');
             }
