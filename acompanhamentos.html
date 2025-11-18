@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamentos | Daniel Lanches</title>
+    <link rel="shortcut icon" href="img/danielico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Lanches</a>
+            <a href="bebidas.html">🥤 Bebidas</a>
+            <a href="acompanhamentos.html" style="color: #ffd166;">🍟 Acompanhamentos</a>
+            <a href="favoritos.html">❤️ Favoritos</a>
+            <a href="carrinho.html" style="position: relative;">🛒 Carrinho <span id="cart-badge" style="display: none;">0</span></a>
+            <button id="dark-mode-toggle">🌙 Tema</button>
+        </nav>
+    </header>
+
+    <section id="acompanhamentos" class="container">
+        <h2>🍟 Nossos Acompanhamentos</h2>
+        
+        <input type="text" id="search-cardapio" placeholder="🔍 Buscar acompanhamento..." />
+
+        <div class="grid">
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Batatas e Fritos</h3>
+
+            <div class="card">
+                <img src="img/batata_frita.jpg" alt="Batata Frita" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Batata Frita Pequena</h3>
+                <p>Batata frita crocante e salgada. Porção pequena e perfeita.</p>
+                <span class="preco" data-preco="6.00">R$ 6,00</span>
+                <button class="adicionar-carrinho" data-id="201" data-nome="Batata Frita Pequena" data-preco="6.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="201" data-nome="Batata Frita Pequena">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/batata_frita.jpg" alt="Batata Frita" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Batata Frita Média</h3>
+                <p>Batata frita crocante e salgada. Porção média para compartilhar.</p>
+                <span class="preco" data-preco="9.00">R$ 9,00</span>
+                <button class="adicionar-carrinho" data-id="202" data-nome="Batata Frita Média" data-preco="9.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="202" data-nome="Batata Frita Média">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/batata_frita.jpg" alt="Batata Frita" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Batata Frita Grande</h3>
+                <p>Batata frita crocante e salgada. Porção grande para aproveitar!</p>
+                <span class="preco" data-preco="12.00">R$ 12,00</span>
+                <button class="adicionar-carrinho" data-id="203" data-nome="Batata Frita Grande" data-preco="12.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="203" data-nome="Batata Frita Grande">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/aneis_cebola.jpg" alt="Anéis de Cebola" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Anéis de Cebola</h3>
+                <p>Anéis de cebola fritos e crocantes. Acompanhamento irresistível.</p>
+                <span class="preco" data-preco="8.00">R$ 8,00</span>
+                <button class="adicionar-carrinho" data-id="204" data-nome="Anéis de Cebola" data-preco="8.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="204" data-nome="Anéis de Cebola">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/asas_frango.jpg" alt="Asas de Frango" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Asas de Frango</h3>
+                <p>Asas de frango fritas e temperadas. Crocantes por fora e suculentas por dentro.</p>
+                <span class="preco" data-preco="10.00">R$ 10,00</span>
+                <button class="adicionar-carrinho" data-id="205" data-nome="Asas de Frango" data-preco="10.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="205" data-nome="Asas de Frango">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Molhos e Temperos</h3>
+
+            <div class="card">
+                <img src="img/molho_alho.jpg" alt="Molho de Alho" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Molho de Alho</h3>
+                <p>Molho caseiro de alho fresco. Perfeito para acompanhar qualquer lanche.</p>
+                <span class="preco" data-preco="2.00">R$ 2,00</span>
+                <button class="adicionar-carrinho" data-id="206" data-nome="Molho de Alho" data-preco="2.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="206" data-nome="Molho de Alho">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/molho_picante.jpg" alt="Molho Picante" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Molho Picante</h3>
+                <p>Molho picante com pimenta fresca. Para quem gosta de emoção!</p>
+                <span class="preco" data-preco="2.00">R$ 2,00</span>
+                <button class="adicionar-carrinho" data-id="207" data-nome="Molho Picante" data-preco="2.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="207" data-nome="Molho Picante">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/maionese_caseira.jpg" alt="Maionese Caseira" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Maionese Caseira</h3>
+                <p>Maionese caseira fresca e cremosa. Feita na hora.</p>
+                <span class="preco" data-preco="2.00">R$ 2,00</span>
+                <button class="adicionar-carrinho" data-id="208" data-nome="Maionese Caseira" data-preco="2.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="208" data-nome="Maionese Caseira">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/molho_barbecue.jpg" alt="Molho Barbecue" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Molho Barbecue</h3>
+                <p>Molho barbecue defumado e saboroso. Ideal para carnes.</p>
+                <span class="preco" data-preco="2.50">R$ 2,50</span>
+                <button class="adicionar-carrinho" data-id="209" data-nome="Molho Barbecue" data-preco="2.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="209" data-nome="Molho Barbecue">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Sobremesas</h3>
+
+            <div class="card">
+                <img src="img/brownie.jpg" alt="Brownie de Chocolate" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Brownie de Chocolate</h3>
+                <p>Brownie caseiro macio e delicioso. Perfeito para finalizar a refeição.</p>
+                <span class="preco" data-preco="6.00">R$ 6,00</span>
+                <button class="adicionar-carrinho" data-id="210" data-nome="Brownie de Chocolate" data-preco="6.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="210" data-nome="Brownie de Chocolate">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/bolo_morango.jpg" alt="Bolo de Morango" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Bolo de Morango</h3>
+                <p>Bolo macio com cobertura de morango fresco. Irresistível!</p>
+                <span class="preco" data-preco="7.00">R$ 7,00</span>
+                <button class="adicionar-carrinho" data-id="211" data-nome="Bolo de Morango" data-preco="7.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="211" data-nome="Bolo de Morango">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/bolo_banana.jpg" alt="Bolo de Banana" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Bolo de Banana</h3>
+                <p>Bolo macio de banana com calda de chocolate. Clássico e delicioso.</p>
+                <span class="preco" data-preco="6.50">R$ 6,50</span>
+                <button class="adicionar-carrinho" data-id="212" data-nome="Bolo de Banana" data-preco="6.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="212" data-nome="Bolo de Banana">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sorvete_chocolate.jpg" alt="Sorvete de Chocolate" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Sorvete de Chocolate</h3>
+                <p>Sorvete cremoso de chocolate. Gelado e refrescante.</p>
+                <span class="preco" data-preco="5.00">R$ 5,00</span>
+                <button class="adicionar-carrinho" data-id="213" data-nome="Sorvete de Chocolate" data-preco="5.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="213" data-nome="Sorvete de Chocolate">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/sorvete_morango.jpg" alt="Sorvete de Morango" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Sorvete de Morango</h3>
+                <p>Sorvete cremoso de morango fresco. Delicioso e refrescante.</p>
+                <span class="preco" data-preco="5.00">R$ 5,00</span>
+                <button class="adicionar-carrinho" data-id="214" data-nome="Sorvete de Morango" data-preco="5.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="214" data-nome="Sorvete de Morango">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Extras</h3>
+
+            <div class="card">
+                <img src="img/queijo_extra.jpg" alt="Queijo Extra" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Queijo Extra</h3>
+                <p>Fatia extra de queijo derretido. Perfeito para potencializar o sabor.</p>
+                <span class="preco" data-preco="3.00">R$ 3,00</span>
+                <button class="adicionar-carrinho" data-id="215" data-nome="Queijo Extra" data-preco="3.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="215" data-nome="Queijo Extra">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/bacon_extra.jpg" alt="Bacon Extra" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Bacon Extra</h3>
+                <p>Fatias extra de bacon crocante. Adicione mais sabor ao seu lanche.</p>
+                <span class="preco" data-preco="4.00">R$ 4,00</span>
+                <button class="adicionar-carrinho" data-id="216" data-nome="Bacon Extra" data-preco="4.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="216" data-nome="Bacon Extra">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/ovo_extra.jpg" alt="Ovo Extra" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Ovo Extra</h3>
+                <p>Ovo frito extra. Aumente a proteína do seu lanche.</p>
+                <span class="preco" data-preco="2.50">R$ 2,50</span>
+                <button class="adicionar-carrinho" data-id="217" data-nome="Ovo Extra" data-preco="2.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="217" data-nome="Ovo Extra">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/salada_extra.jpg" alt="Salada Extra" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Salada Extra</h3>
+                <p>Porção extra de alface e tomate fresco. Mais saúde no seu lanche.</p>
+                <span class="preco" data-preco="2.00">R$ 2,00</span>
+                <button class="adicionar-carrinho" data-id="218" data-nome="Salada Extra" data-preco="2.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="218" data-nome="Salada Extra">🤍 Favoritar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="rodape">📞 (44) 1234-5678 | 📧 contato@daniellanches.com.br</p>
+        <p class="rodape">Horário de funcionamento: Seg-Dom 11h às 23h</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>

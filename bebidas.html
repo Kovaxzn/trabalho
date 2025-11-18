@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas | Daniel Lanches</title>
+    <link rel="shortcut icon" href="img/danielico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Lanches</a>
+            <a href="bebidas.html" style="color: #ffd166;">🥤 Bebidas</a>
+            <a href="acompanhamentos.html">🍟 Acompanhamentos</a>
+            <a href="favoritos.html">❤️ Favoritos</a>
+            <a href="carrinho.html" style="position: relative;">🛒 Carrinho <span id="cart-badge" style="display: none;">0</span></a>
+            <button id="dark-mode-toggle">🌙 Tema</button>
+        </nav>
+    </header>
+
+    <section id="bebidas" class="container">
+        <h2>🥤 Nossas Bebidas</h2>
+        
+        <input type="text" id="search-cardapio" placeholder="🔍 Buscar bebida..." />
+
+        <div class="grid">
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Refrigerantes</h3>
+
+            <div class="card">
+                <img src="img/coca_cola.jpg" alt="Coca-Cola" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Coca-Cola</h3>
+                <p>Refrigerante de cola gelado e refrescante. 350ml.</p>
+                <span class="preco" data-preco="5.00">R$ 5,00</span>
+                <button class="adicionar-carrinho" data-id="101" data-nome="Coca-Cola 350ml" data-preco="5.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="101" data-nome="Coca-Cola 350ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/coca_cola_600ml.jpg" alt="Coca-Cola 600ml" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Coca-Cola 600ml</h3>
+                <p>Refrigerante de cola gelado em tamanho grande. Perfeito para compartilhar.</p>
+                <span class="preco" data-preco="8.00">R$ 8,00</span>
+                <button class="adicionar-carrinho" data-id="102" data-nome="Coca-Cola 600ml" data-preco="8.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="102" data-nome="Coca-Cola 600ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/guarana.jpg" alt="Guaraná" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Guaraná</h3>
+                <p>Refrigerante de guaraná gelado com sabor tropical. 350ml.</p>
+                <span class="preco" data-preco="5.00">R$ 5,00</span>
+                <button class="adicionar-carrinho" data-id="103" data-nome="Guaraná 350ml" data-preco="5.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="103" data-nome="Guaraná 350ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/fanta_uva.jpg" alt="Fanta Uva" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Fanta Uva</h3>
+                <p>Refrigerante de uva gelado e saboroso. 350ml.</p>
+                <span class="preco" data-preco="5.00">R$ 5,00</span>
+                <button class="adicionar-carrinho" data-id="104" data-nome="Fanta Uva 350ml" data-preco="5.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="104" data-nome="Fanta Uva 350ml">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Sucos Naturais</h3>
+
+            <div class="card">
+                <img src="img/suco_laranja.jpg" alt="Suco de Laranja" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Suco de Laranja</h3>
+                <p>Suco natural de laranja fresco e saudável. Sem açúcar adicionado. 300ml.</p>
+                <span class="preco" data-preco="7.00">R$ 7,00</span>
+                <button class="adicionar-carrinho" data-id="105" data-nome="Suco de Laranja 300ml" data-preco="7.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="105" data-nome="Suco de Laranja 300ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/suco_morango.jpg" alt="Suco de Morango" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Suco de Morango</h3>
+                <p>Suco natural de morango fresco e delicioso. 300ml.</p>
+                <span class="preco" data-preco="7.00">R$ 7,00</span>
+                <button class="adicionar-carrinho" data-id="106" data-nome="Suco de Morango 300ml" data-preco="7.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="106" data-nome="Suco de Morango 300ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/suco_melancia.jpg" alt="Suco de Melancia" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Suco de Melancia</h3>
+                <p>Suco natural de melancia refrescante. 300ml.</p>
+                <span class="preco" data-preco="7.00">R$ 7,00</span>
+                <button class="adicionar-carrinho" data-id="107" data-nome="Suco de Melancia 300ml" data-preco="7.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="107" data-nome="Suco de Melancia 300ml">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Bebidas Quentes</h3>
+
+            <div class="card">
+                <img src="img/cafe_coado.jpg" alt="Café Coado" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Café Coado</h3>
+                <p>Café coado na hora, quente e aromático. Servido em xícara. 200ml.</p>
+                <span class="preco" data-preco="3.50">R$ 3,50</span>
+                <button class="adicionar-carrinho" data-id="108" data-nome="Café Coado 200ml" data-preco="3.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="108" data-nome="Café Coado 200ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/cappuccino.jpg" alt="Cappuccino" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Cappuccino</h3>
+                <p>Cappuccino cremoso com espuma de leite. Servido quente. 250ml.</p>
+                <span class="preco" data-preco="6.00">R$ 6,00</span>
+                <button class="adicionar-carrinho" data-id="109" data-nome="Cappuccino 250ml" data-preco="6.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="109" data-nome="Cappuccino 250ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/chocolate_quente.jpg" alt="Chocolate Quente" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Chocolate Quente</h3>
+                <p>Chocolate quente cremoso com chantilly. 250ml.</p>
+                <span class="preco" data-preco="7.00">R$ 7,00</span>
+                <button class="adicionar-carrinho" data-id="110" data-nome="Chocolate Quente 250ml" data-preco="7.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="110" data-nome="Chocolate Quente 250ml">🤍 Favoritar</button>
+            </div>
+
+            
+            <h3 style="grid-column: 1 / -1; text-align: center; color: #d62828; margin-top: 20px;">Bebidas Geladas Premium</h3>
+
+            <div class="card">
+                <img src="img/milkshake_morango.jpg" alt="Milkshake de Morango" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Milkshake de Morango</h3>
+                <p>Milkshake cremoso com morango fresco e calda de chocolate. 350ml.</p>
+                <span class="preco" data-preco="9.50">R$ 9,50</span>
+                <button class="adicionar-carrinho" data-id="111" data-nome="Milkshake de Morango 350ml" data-preco="9.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="111" data-nome="Milkshake de Morango 350ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/milkshake_chocolate.jpg" alt="Milkshake de Chocolate" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Milkshake de Chocolate</h3>
+                <p>Milkshake cremoso com chocolate e calda de chocolate. 350ml.</p>
+                <span class="preco" data-preco="9.50">R$ 9,50</span>
+                <button class="adicionar-carrinho" data-id="112" data-nome="Milkshake de Chocolate 350ml" data-preco="9.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="112" data-nome="Milkshake de Chocolate 350ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/milkshake_banana.jpg" alt="Milkshake de Banana" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Milkshake de Banana</h3>
+                <p>Milkshake cremoso com banana e calda de caramelo. 350ml.</p>
+                <span class="preco" data-preco="9.50">R$ 9,50</span>
+                <button class="adicionar-carrinho" data-id="113" data-nome="Milkshake de Banana 350ml" data-preco="9.50">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="113" data-nome="Milkshake de Banana 350ml">🤍 Favoritar</button>
+            </div>
+
+            <div class="card">
+                <img src="img/acai_granola.jpg" alt="Açaí com Granola" style="height: 150px; border-radius: 10px; margin-bottom: 15px;">
+                <h3>Açaí com Granola</h3>
+                <p>Açaí gelado com granola crocante e frutas vermelhas. 300ml.</p>
+                <span class="preco" data-preco="12.00">R$ 12,00</span>
+                <button class="adicionar-carrinho" data-id="114" data-nome="Açaí com Granola 300ml" data-preco="12.00">Adicionar ao Carrinho</button>
+                <button class="favoritar-btn" data-id="114" data-nome="Açaí com Granola 300ml">🤍 Favoritar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="rodape">📞 (44) 1234-5678 | 📧 contato@daniellanches.com.br</p>
+        <p class="rodape">Horário de funcionamento: Seg-Dom 11h às 23h</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>
+</html>

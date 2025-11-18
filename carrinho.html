@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Daniel Lanches</title>
+    <link rel="shortcut icon" href="img/danielico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Lanches</a>
+            <a href="bebidas.html">🥤 Bebidas</a>
+            <a href="acompanhamentos.html">🍟 Acompanhamentos</a>
+            <a href="favoritos.html">❤️ Favoritos</a>
+            <a href="carrinho.html" style="position: relative; color: #ffd166;">🛒 Carrinho <span id="cart-badge" style="display: none;">0</span></a>
+            <button id="dark-mode-toggle">🌙 Tema</button>
+        </nav>
+    </header>
+
+    <section id="carrinho" class="container">
+        <h2>Seu Carrinho de Compras</h2>
+        
+        <div id="itens-carrinho">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+
+        
+        <div class="cupom-section">
+            <h3>Aplicar Cupom de Desconto</h3>
+            <p>Cupons disponíveis: <strong>DESCONTO10</strong> (10%), <strong>DESCONTO20</strong> (20%), <strong>PRIMEIRACOMPRA</strong> (15%), <strong>DANIEL2024</strong> (25%)</p>
+            <input type="text" id="cupom-input" placeholder="Digite o código do cupom">
+            <button id="validar-cupom">Aplicar Cupom</button>
+            <div id="cupom-msg"></div>
+        </div>
+
+        
+        <div id="resumo-carrinho">
+            <h3>Resumo do Pedido</h3>
+            <div id="desconto-aplicado"></div>
+            <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+            <button id="finalizar-compra" disabled>✅ Finalizar Compra</button>
+            <button id="enviar-whatsapp" style="background-color: #25d366; margin-left: 10px;">💬 Enviar via WhatsApp</button>
+        </div>
+
+        
+        <div id="historico-pedidos" style="margin-top: 40px; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+            <h3>Histórico de Pedidos</h3>
+            <div id="lista-pedidos">
+                <p>Nenhum pedido realizado ainda.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/carrinho.js"></script>
+    <script>
+        
+        function exibirHistoricoPedidos() {
+            const pedidos = getOrders();
+            const listaPedidos = document.getElementById('lista-pedidos');
+            
+            if (pedidos.length === 0) {
+                listaPedidos.innerHTML = '<p>Nenhum pedido realizado ainda.</p>';
+                return;
+            }
+            
+            let html = '<table style="width: 100%; border-collapse: collapse;">';
+            html += '<tr style="background-color: #ddd;"><th style="padding: 10px; text-align: left; border: 1px solid #ccc;">Data</th><th style="padding: 10px; text-align: left; border: 1px solid #ccc;">Hora</th><th style="padding: 10px; text-align: left; border: 1px solid #ccc;">Itens</th><th style="padding: 10px; text-align: left; border: 1px solid #ccc;">Total</th></tr>';
+            
+            pedidos.forEach(pedido => {
+                const itensTexto = pedido.itens.map(item => `${item.nome} (x${item.quantidade})`).join(', ');
+                html += `<tr style="border: 1px solid #ccc;"><td style="padding: 10px; border: 1px solid #ccc;">${pedido.data}</td><td style="padding: 10px; border: 1px solid #ccc;">${pedido.hora}</td><td style="padding: 10px; border: 1px solid #ccc;">${itensTexto}</td><td style="padding: 10px; border: 1px solid #ccc;">${pedido.total}</td></tr>`;
+            });
+            
+            html += '</table>';
+            listaPedidos.innerHTML = html;
+        }
+        
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            exibirHistoricoPedidos();
+        });
+    </script>
+</body>
+</html>

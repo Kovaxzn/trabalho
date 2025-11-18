@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Favoritos | Daniel Lanches</title>
+    <link rel="shortcut icon" href="img/danielico.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍔 <strong>Daniel</strong> Lanches </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Lanches</a>
+            <a href="bebidas.html">🥤 Bebidas</a>
+            <a href="acompanhamentos.html">🍟 Acompanhamentos</a>
+            <a href="favoritos.html" style="color: #ffd166;">❤️ Favoritos</a>
+            <a href="carrinho.html" style="position: relative;">🛒 Carrinho <span id="cart-badge" style="display: none;">0</span></a>
+            <button id="dark-mode-toggle">🌙 Tema</button>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>❤️ Meus Produtos Favoritos</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">Aqui estão todos os seus produtos favoritos. Clique em "Adicionar ao Carrinho" para comprar!</p>
+        
+        <div id="favoritos-container" class="grid">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p class="rodape">📞 (44) 1234-5678 | 📧 contato@daniellanches.com.br</p>
+        <p class="rodape">Horário de funcionamento: Seg-Dom 11h às 23h</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>
