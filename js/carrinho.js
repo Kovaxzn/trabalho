@@ -541,7 +541,7 @@ async function calcularFrete() {
                 ${data.logradouro || 'N/A'}, ${data.bairro || 'N/A'}<br>
                 ${data.localidade} - ${data.uf}<br><br>
                 <strong style="color: #d62828;">Valor do Frete:</strong> R$ ${valorFrete.toFixed(2)}<br>
-                <strong>Prazo de Entrega:</strong> 5-7 dias úteis
+                <strong>Prazo de Entrega:</strong> 30-50 minutos
             </div>
         `;
         
